@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Exer.Crircle.java&apos; to &apos;Circle.java&apos;&#x0D;&#x0A;- Original project: &apos;Day9&apos;&#x0D;&#x0A;- Original element: &apos;Exer.Crircle.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Exer.Circle.java&apos;" description="Rename compilation unit &apos;Crircle.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Exer{Crircle.java" name="Circle.java" references="false" stamp="1589080344228" version="1.0"/>
+</session>

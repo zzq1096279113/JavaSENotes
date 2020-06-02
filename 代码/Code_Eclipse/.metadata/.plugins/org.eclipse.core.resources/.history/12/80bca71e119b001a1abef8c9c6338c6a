@@ -1,0 +1,7 @@
+package domain;
+
+public class Programmer extends Employee {
+	private int memberId;
+	private Status status = FREE;
+	private Equipment equipment;
+}
