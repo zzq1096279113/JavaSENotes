@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move element &apos;EclipseKeys.java&apos; to &apos;Day11/src/classes&apos;&#x0D;&#x0A;- Original project: &apos;day110&apos;&#x0D;&#x0A;- Destination element: &apos;Day11/src/classes&apos;&#x0D;&#x0A;- Original element: &apos;com.atguigu.java.EclipseKeys.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Day11/src&lt;classes" element1="/src&lt;com.atguigu.java{EclipseKeys.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1589253415235" units="1" version="1.0"/>
-</session>
