@@ -31,48 +31,31 @@ public class SingleLinkedListDemo {
 //        System.out.println("*********************修改后*************************");
 //        sll.update(hero7);
 //        sll.show();
+//
 //        //删除测试
 //        System.out.println("*********************删除后*************************");
 //        sll.delete(1);
 //        sll.delete(6);
 //        sll.show();
+//
 //        //获取长度
 //        System.out.println("**********************************************");
 //        int length = sll.getLength();
 //        System.out.println("链表长度为：" + length);
-        //查找倒数第index节点
-        System.out.println("*********************查找到*************************");
-        HeroNode lastNode = sll.findLastNode(2);
-        System.out.println(lastNode);
+//
+//        //查找倒数第index节点
+//        System.out.println("*********************查找到*************************");
+//        HeroNode lastNode = sll.findLastNode(2);
+//        System.out.println(lastNode);
+//
 //        //反转链表
 //        System.out.println("*********************反转后*************************");
 //        sll.reverseList();
 //        sll.show();
+//
 //        //逆序打印
 //        System.out.println("*********************逆序后*************************");
 //        sll.reversePrint();
-    }
-
-    public HeroNode mergeTwoLists(HeroNode h1, HeroNode h2) {
-        HeroNode heroNode = new HeroNode(0, "", "");
-        HeroNode current = heroNode;
-        while (h1 != null && h2 != null) {
-            if (h1.id < h2.id) {
-                current.next = h1;
-                h1 = h1.next;
-                current = current.next;
-            } else {
-                current.next = h2;
-                h2 = h2.next;
-                current = current.next;
-            }
-            if (h1 == null) {
-                current.next = h2;
-            } else {
-                current.next = h1;
-            }
-        }
-        return heroNode.next;
     }
 }
 
@@ -237,16 +220,18 @@ class SingleLinkedList {
     }
 
     /**
-     * 反转链表
-     *
-     * @return
+     * @Description 反转链表
+     * @Param null
+     * @Return void
+     * @Author zzq
+     * @Date 2020/7/28 9:04
      */
     public void reverseList() {
-        if (head.next == null || head.next.next == null)//链表节点为空或是只有一个节点直接返回原来的链表
+        if (head.next == null || head.next.next == null)    //链表为空或只有一个节点直接返回原来的链表
             return;
         HeroNode temp = head.next;
-        HeroNode next = null;
-        HeroNode newHead = new HeroNode(0, "", "");//创建一个新的链表
+        HeroNode next;
+        HeroNode newHead = new HeroNode(0, "", ""); //创建一个新的链表
         while (temp != null) {
             next = temp.next;
             temp.next = newHead.next;
@@ -256,19 +241,54 @@ class SingleLinkedList {
         head.next = newHead.next;
     }
 
+    /**
+     * @Description 逆序打印（使用栈数据结构）
+     * @Param null
+     * @Return void
+     * @Author zzq
+     * @Date 2020/7/28 9:27
+     */
     public void reversePrint() {
         if (head.next == null) {
             return;
         }
-        HeroNode temp = head.next;
         Stack<HeroNode> heroNodes = new Stack<>();
-        while (temp != null) {
+        HeroNode temp = head.next;
+        while (temp != null) {  //将链表所有的节点压入栈中
             heroNodes.push(temp);
             temp = temp.next;
         }
-        while (heroNodes.size() > 0) {
+        while (heroNodes.size() > 0) {  //将栈中的节点弹出并打印
             System.out.println(heroNodes.pop());
         }
+    }
+
+    /**
+     * @Description 合并两个有序链表，合并之后依然有序
+     * @Param [h1, h2]
+     * @Return linkedList.HeroNode
+     * @Author zzq
+     * @Date 2020/7/28 9:50
+     */
+    public HeroNode mergeTwoLists(HeroNode h1, HeroNode h2) {
+        HeroNode newHeroNode = new HeroNode(0, "", "");
+        HeroNode temp = newHeroNode;
+        while (h1 != null && h2 != null) {
+            if (h1.id < h2.id) {
+                temp.next = h1;
+                h1 = h1.next;
+            } else {
+                temp.next = h2;
+                h2 = h2.next;
+            }
+            temp = temp.next;
+        }
+        if (h1 == null) {
+            temp.next = h2;
+        } else {
+            temp.next = h1;
+        }
+        return newHeroNode.next;
     }
 }
 
