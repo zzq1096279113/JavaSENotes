@@ -15,6 +15,8 @@ public class Conversion {
         ArrayList<String> infixExpression = getInfixExpression(expression);
         ArrayList<String> suffixExpression = parseSuffixExpression(infixExpression);
         int calculate = PolandCalculator.calculate(suffixExpression);
+        System.out.println("中缀表达式：" + infixExpression);
+        System.out.println("后缀表达式：" + suffixExpression);
         System.out.println("运算结果为：" + calculate);
     }
 
@@ -92,5 +94,4 @@ public class Conversion {
         }
         return result;
     }
-
 }
