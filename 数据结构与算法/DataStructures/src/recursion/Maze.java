@@ -26,7 +26,7 @@ public class Maze {
             System.out.println();
         }
         System.out.println("***************路线*****************");
-        findWay(map,1,1);
+        findWay(map, 1, 1);
         for (int i = 0; i < 8; i++) {   //显示探测后的地图
             for (int j = 0; j < 7; j++) {
                 System.out.print(map[i][j] + " ");
@@ -60,8 +60,7 @@ public class Maze {
                     map[i][j] = 3;
                     return false;
                 }
-            }
-            else{   //如果map[i][j]!==0，可能是1，2，3。
+            } else {   //如果map[i][j]!==0，可能是1，2，3。
                 return false;
             }
         }
