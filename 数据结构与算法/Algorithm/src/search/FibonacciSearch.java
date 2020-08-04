@@ -39,7 +39,6 @@ public class FibonacciSearch {
         int[] temp = deal(arr, fibonacci[k] - 1);
         while (left <= right) {     //斐波那契数列被分为三段 fibonacci[k-1]-1，mid，fibonacci[k-2]-1
             mid = left + fibonacci[k - 1] - 1;  //取得中间的值
-            System.out.println(temp[mid]);
             if (value < temp[mid]) {
                 right = mid - 1;    //右索引指向 mid-1 处
                 k--;        //移动k到k-1位置
