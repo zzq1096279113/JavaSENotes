@@ -15,6 +15,13 @@ public class BinarySortTree {
         System.out.println("二叉排序树为：");
         binarySortTreeDemo.midOrder();
         binarySortTreeDemo.delete(2);
+        binarySortTreeDemo.delete(5);
+        binarySortTreeDemo.delete(9);
+        binarySortTreeDemo.delete(12);
+        binarySortTreeDemo.delete(7);
+        binarySortTreeDemo.delete(3);
+        binarySortTreeDemo.delete(10);
+        binarySortTreeDemo.delete(1);
         System.out.println("删除后的二叉排序树为：");
         binarySortTreeDemo.midOrder();
     }
@@ -66,24 +73,84 @@ class BinarySortTreeDemo {
             return root.searchParent(value);
     }
 
+    /**
+     * @Description 删除并返回以node为根节点的树的最小节点
+     * @Param [node]
+     * @Return int
+     * @Author zzq
+     * @Date 2020/8/9 9:14
+     */
+    public int deleteRightMin(BinarySortNode node) {
+        BinarySortNode target = node;
+        while (target.left != null)
+            target = target.left;
+        delete(target.value);
+        return target.value;
+    }
+
+    /**
+     * @Description 删除并返回以node为根节点的树的最大节点
+     * @Param [node]
+     * @Return int
+     * @Author zzq
+     * @Date 2020/8/9 9:35
+     */
+    public int deleteLeftMax(BinarySortNode node) {
+        BinarySortNode target = node;
+        while (target.right != null)
+            target = target.right;
+        delete(target.value);
+        return target.value;
+    }
+
+    /**
+     * @Description 根据传入的值从树中删除节点。分为了三种情况：删除节点为叶子节点，删除节点有一个子树，删除节点有两个子树
+     * @Param [value]
+     * @Return void
+     * @Author zzq
+     * @Date 2020/8/9 9:27
+     */
     public void delete(int value) {
         if (root == null) {     //如果节点为空，直接返回
             return;
-        } else if (root.value == value && root.left == null && root.right == null) {    //如果树只有一个根节点，且根节点就是要删除的节点，将树置空
+        } else if (root.value == value && root.left == null && root.right == null) {        //如果树只有一个根节点，且根节点就是要删除的节点，将树置空
             root = null;
+            return;
+        } else if (root.value != value && root.left == null && root.right == null) {        //如果树只有一个根节点，且根节点不是要删除的节点
+            return;
+        } else if (root.left != null && root.right == null && root.value == value) {        //如果根节点只有一个左子节点，且根节点是要删除的节点
+            root = root.left;
+            return;
+        } else if (root.right != null && root.left == null && root.value == value) {        //如果根节点只有一个右子节点，且根节点是要删除的节点
+            root = root.right;
             return;
         } else {
             BinarySortNode targetNode = search(value);      //查找节点
             if (targetNode == null)     //如果没有找到节点，则节点不存在，直接返回
                 return;
             BinarySortNode parentNode = searchParent(value);    //查找父节点
-            if (targetNode.left == null && targetNode.right == null) {          //如果找到是叶子结点
+            if (targetNode.left == null && targetNode.right == null) {              //如果找到是叶子结点
                 if (parentNode.left != null && parentNode.left == targetNode)           //如果父节点的左子节点就是targetNode
                     parentNode.left = null;
                 else if (parentNode.right != null && parentNode.right == targetNode)    //如果父节点的右子节点就是targetNode
                     parentNode.right = null;
+            } else if (targetNode.left != null && targetNode.right != null) {       //如果节点有两个子树
+                int min = deleteRightMin(targetNode.right);     //到targetNode的右边找最小值，删除并返回
+//                int max = deleteLeftMax(targetNode.left);     //到targetNode的左边找最大值，删除并返回
+                targetNode.value = min;     //将最小值赋给当前节点
+            } else {        //只有一颗子树的情况
+                if (targetNode.left != null) {      //如果要删除的节点有左子树
+                    if (parentNode.left == targetNode)     //且要删除的节点是父节点的左子节点
+                        parentNode.left = targetNode.left;
+                    else if (parentNode.right == targetNode) //且要删除的节点是父节点的右子节点
+                        parentNode.right = targetNode.left;
+                } else {        //如果要删除的节点有右子树
+                    if (parentNode.left == targetNode)     //且要删除的节点是父节点的左子节点
+                        parentNode.left = targetNode.right;
+                    else if (parentNode.right == targetNode) //且要删除的节点是父节点的右子节点
+                        parentNode.right = targetNode.right;
+                }
             }
-
         }
     }
 
