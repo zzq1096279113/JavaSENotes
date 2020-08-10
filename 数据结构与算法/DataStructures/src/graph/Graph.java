@@ -136,12 +136,22 @@ public class Graph {
         boolean[] isFlag = new boolean[getVertexCount()];
         LinkedList<Integer> queue = new LinkedList<>();     //保存索引的队列
         for (int i = 0; i < getVertexCount(); i++) {
-            System.out.println(getValueByIndex(i));     //访问并输出
-            isFlag[i] = true;       //标记为已访问
-            queue.addLast(i);       //将节点加入队列
-            while (!queue.isEmpty()) {
-                head = queue.removeFirst();
+            if (!isFlag[i]) {
+                System.out.println(getValueByIndex(i));     //访问并输出
+                isFlag[i] = true;       //标记为已访问
+                queue.addFirst(i);
+                while (!queue.isEmpty()) {
+                    i = queue.removeFirst();
+                    for (int j = 0; j < getVertexCount(); j++) {
+                        if (edges[i][j] == 1 && !isFlag[j]) {
+                            System.out.println(getValueByIndex(j));     //访问并输出
+                            isFlag[j] = true;       //标记为已访问
+                            queue.addFirst(j);
+                        }
+                    }
+                }
             }
+
         }
 
 
@@ -157,6 +167,6 @@ public class Graph {
         graph.insertEdges(1, 3, 1);
         graph.insertEdges(1, 4, 1);
 //        graph.showEdges();
-        graph.dfs();
+        graph.bfs();
     }
 }
