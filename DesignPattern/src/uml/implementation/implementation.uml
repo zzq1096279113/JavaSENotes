@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>uml.implementation</OriginalElement>
+  <nodes>
+    <node x="18.0" y="0.0">uml.implementation.PersonService</node>
+    <node x="0.0" y="108.0">uml.implementation.PersonServiceBean</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="uml.implementation.PersonServiceBean" target="uml.implementation.PersonService">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="100.5" y="83.0" />
+  <SelectedNodes>
+    <node>uml.implementation.PersonServiceBean</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
