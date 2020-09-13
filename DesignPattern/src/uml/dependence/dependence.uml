@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>uml.dependence</OriginalElement>
+  <nodes>
+    <node x="243.99999999999997" y="0.0">uml.dependence.Department</node>
+    <node x="0.0" y="0.0">uml.dependence.IDCard</node>
+    <node x="176.99999999999994" y="83.0">uml.dependence.PersonServiceBean</node>
+    <node x="402.0" y="0.0">uml.dependence.PersonDao</node>
+    <node x="121.99999999999997" y="0.0">uml.dependence.Person</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="uml.dependence.PersonServiceBean" target="uml.dependence.PersonDao">
+      <point x="81.20000000000002" y="-64.0" />
+      <point x="359.69999999999993" y="63.0" />
+      <point x="466.5" y="63.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="uml.dependence.PersonServiceBean" target="uml.dependence.Person">
+      <point x="-40.59999999999994" y="-64.0" />
+      <point x="237.9" y="53.0" />
+      <point x="172.99999999999997" y="53.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="uml.dependence.PersonServiceBean" target="uml.dependence.Department">
+      <point x="2.8421709430404007E-14" y="-64.0" />
+      <point x="-34.5" y="16.5" />
+    </edge>
+    <edge source="uml.dependence.PersonServiceBean" target="uml.dependence.IDCard">
+      <point x="-81.19999999999993" y="-64.0" />
+      <point x="197.3" y="63.0" />
+      <point x="51.0" y="63.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="265.5" y="105.5" />
+  <SelectedNodes>
+    <node>uml.dependence.Person</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
