@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>builder.improve</OriginalElement>
+  <nodes>
+    <node x="446.0" y="356.0">builder.improve.HighBuilding</node>
+    <node x="251.99999999999997" y="356.0">builder.improve.CommonBuilding</node>
+    <node x="370.56481481481484" y="521.0">builder.improve.Client</node>
+    <node x="272.87268518518516" y="0.0">builder.improve.House</node>
+    <node x="0.0" y="355.0">builder.improve.BuildingDirector</node>
+    <node x="241.37268518518516" y="154.0">builder.improve.HouseBuilder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="builder.improve.HighBuilding" target="builder.improve.HouseBuilder">
+      <point x="0.0" y="-52.0" />
+      <point x="524.0" y="335.0" />
+      <point x="383.99768518518516" y="335.0" />
+      <point x="61.125" y="75.5" />
+    </edge>
+    <edge source="builder.improve.Client" target="builder.improve.House">
+      <point x="61.99999999999996" y="-29.0" />
+      <point x="510.0648148148148" y="501.0" />
+      <point x="612.5" y="501.0" />
+      <point x="612.5" y="124.0" />
+      <point x="362.87268518518516" y="124.0" />
+      <point x="40.0" y="52.0" />
+    </edge>
+    <edge source="builder.improve.Client" target="builder.improve.BuildingDirector">
+      <point x="-31.00000000000003" y="-29.0" />
+      <point x="417.0648148148148" y="491.0" />
+      <point x="174.0" y="491.0" />
+      <point x="58.0" y="53.0" />
+    </edge>
+    <edge source="builder.improve.HouseBuilder" target="builder.improve.House">
+      <point x="-54.33333333333337" y="-75.5" />
+      <point x="268.5393518518518" y="134.0" />
+      <point x="302.87268518518516" y="134.0" />
+      <point x="-20.0" y="52.0" />
+    </edge>
+    <edge source="builder.improve.Client" target="builder.improve.HighBuilding">
+      <point x="30.99999999999997" y="-29.0" />
+      <point x="479.0648148148148" y="491.0" />
+      <point x="563.0" y="491.0" />
+      <point x="39.0" y="52.0" />
+    </edge>
+    <edge source="builder.improve.BuildingDirector" target="builder.improve.HouseBuilder">
+      <point x="1.4210854715202004E-14" y="-53.0" />
+      <point x="116.0" y="325.0" />
+      <point x="261.74768518518516" y="325.0" />
+      <point x="-61.125" y="75.5" />
+    </edge>
+    <edge source="builder.improve.BuildingDirector" target="builder.improve.House">
+      <point x="-77.33333333333331" y="-53.0" />
+      <point x="38.666666666666686" y="335.0" />
+      <point x="85.8125" y="335.0" />
+      <point x="85.8125" y="124.0" />
+      <point x="282.87268518518516" y="124.0" />
+      <point x="-40.0" y="52.0" />
+    </edge>
+    <edge source="builder.improve.CommonBuilding" target="builder.improve.HouseBuilder">
+      <point x="0.0" y="-52.0" />
+      <point x="339.0" y="335.0" />
+      <point x="343.24768518518516" y="335.0" />
+      <point x="20.375" y="75.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9348914858096828" x="301.0" y="289.5" />
+  <SelectedNodes>
+    <node>builder.improve.HighBuilding</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
