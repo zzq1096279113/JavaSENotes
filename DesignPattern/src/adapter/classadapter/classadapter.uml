@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>adapter.classadapter</OriginalElement>
+  <nodes>
+    <node x="0.0" y="108.0">adapter.classadapter.Phone</node>
+    <node x="70.25" y="216.0">adapter.classadapter.Client</node>
+    <node x="217.0" y="108.0">adapter.classadapter.VoltageAdapter</node>
+    <node x="267.25" y="0.0">adapter.classadapter.Voltage220V</node>
+    <node x="66.25" y="0.0">adapter.classadapter.Voltage5V</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="adapter.classadapter.Client" target="adapter.classadapter.Phone">
+      <point x="-51.66666666666666" y="-29.0" />
+      <point x="96.08333333333334" y="191.0" />
+      <point x="49.25" y="191.0" />
+      <point x="-49.25" y="29.0" />
+    </edge>
+    <edge source="adapter.classadapter.Client" target="adapter.classadapter.VoltageAdapter">
+      <point x="51.66666666666666" y="-29.0" />
+      <point x="199.41666666666666" y="191.0" />
+      <point x="304.0" y="191.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="adapter.classadapter.VoltageAdapter" target="adapter.classadapter.Voltage5V">
+      <point x="-58.0" y="-29.0" />
+      <point x="246.0" y="83.0" />
+      <point x="163.0" y="83.0" />
+      <point x="32.25" y="29.0" />
+    </edge>
+    <edge source="adapter.classadapter.VoltageAdapter" target="adapter.classadapter.Voltage220V">
+      <point x="0.0" y="-29.0" />
+      <point x="-36.75" y="29.0" />
+    </edge>
+    <edge source="adapter.classadapter.Phone" target="adapter.classadapter.Voltage5V">
+      <point x="0.0" y="-29.0" />
+      <point x="-32.25" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="148.0" y="97.0" />
+  <SelectedNodes>
+    <node>adapter.classadapter.Phone</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
