@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>bridge</OriginalElement>
+  <nodes>
+    <node x="251.95833333333331" y="164.0">bridge.Phone</node>
+    <node x="326.0" y="366.0">bridge.UpRightPhone</node>
+    <node x="0.0" y="378.0">bridge.Vivo</node>
+    <node x="239.08333333333331" y="564.0">bridge.Client</node>
+    <node x="259.0833333333333" y="0.0">bridge.Brand</node>
+    <node x="135.0" y="366.0">bridge.FoldedPhone</node>
+    <node x="524.0" y="378.0">bridge.XiaoMi</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="bridge.Vivo" target="bridge.Brand">
+      <point x="0.0" y="-52.0" />
+      <point x="57.5" y="124.0" />
+      <point x="268.66666666666663" y="124.0" />
+      <point x="-47.916666666666686" y="52.0" />
+    </edge>
+    <edge source="bridge.XiaoMi" target="bridge.Brand">
+      <point x="0.0" y="-52.0" />
+      <point x="581.5" y="124.0" />
+      <point x="364.5" y="124.0" />
+      <point x="47.916666666666686" y="52.0" />
+    </edge>
+    <edge source="bridge.UpRightPhone" target="bridge.Phone">
+      <point x="-59.33333333333334" y="-64.0" />
+      <point x="355.66666666666663" y="341.0" />
+      <point x="333.8333333333333" y="341.0" />
+      <point x="16.375" y="76.0" />
+    </edge>
+    <edge source="bridge.FoldedPhone" target="bridge.Phone">
+      <point x="57.0" y="-64.0" />
+      <point x="277.5" y="341.0" />
+      <point x="301.0833333333333" y="341.0" />
+      <point x="-16.375" y="76.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="319.5" y="311.0" />
+  <SelectedNodes>
+    <node>bridge.Phone</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
