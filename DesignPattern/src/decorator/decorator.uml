@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>decorator</OriginalElement>
+  <nodes>
+    <node x="163.55998168498166" y="211.0">decorator.Coffee</node>
+    <node x="298.0" y="375.0">decorator.LongBlack</node>
+    <node x="562.5" y="0.0">decorator.Drink</node>
+    <node x="447.0" y="375.0">decorator.Sugar</node>
+    <node x="592.0" y="375.0">decorator.Chocolate</node>
+    <node x="761.0" y="375.0">decorator.Milk</node>
+    <node x="158.0" y="375.0">decorator.Espresso</node>
+    <node x="455.6698717948717" y="493.0">decorator.Client</node>
+    <node x="582.393315018315" y="175.0">decorator.Decorator</node>
+    <node x="0.0" y="375.0">decorator.ShortBlack</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="decorator.Sugar" target="decorator.Decorator">
+      <point x="41.66666666666657" y="-29.0" />
+      <point x="551.1666666666665" y="345.0" />
+      <point x="619.893315018315" y="345.0" />
+      <point x="-37.5" y="65.0" />
+    </edge>
+    <edge source="decorator.Coffee" target="decorator.Drink">
+      <point x="0.0" y="-29.0" />
+      <point x="218.55998168498166" y="145.0" />
+      <point x="572.1428571428571" y="145.0" />
+      <point x="-57.85714285714289" y="52.5" />
+    </edge>
+    <edge source="decorator.Chocolate" target="decorator.Decorator">
+      <point x="0.0" y="-29.0" />
+      <point x="666.5" y="355.0" />
+      <point x="669.893315018315" y="355.0" />
+      <point x="12.5" y="65.0" />
+    </edge>
+    <edge source="decorator.Client" target="decorator.Sugar">
+      <point x="-12.916666666666629" y="-29.0" />
+      <point x="520.2532051282051" y="453.0" />
+      <point x="478.25" y="453.0" />
+      <point x="-31.25" y="29.0" />
+    </edge>
+    <edge source="decorator.Client" target="decorator.LongBlack">
+      <point x="-64.58333333333331" y="-29.0" />
+      <point x="468.5865384615384" y="473.0" />
+      <point x="330.25" y="473.0" />
+      <point x="-32.25" y="29.0" />
+    </edge>
+    <edge source="decorator.Milk" target="decorator.Decorator">
+      <point x="0.0" y="-29.0" />
+      <point x="819.0" y="335.0" />
+      <point x="719.893315018315" y="335.0" />
+      <point x="62.5" y="65.0" />
+    </edge>
+    <edge source="decorator.ShortBlack" target="decorator.Coffee">
+      <point x="0.0" y="-29.0" />
+      <point x="69.0" y="355.0" />
+      <point x="181.89331501831498" y="355.0" />
+      <point x="-36.66666666666666" y="29.0" />
+    </edge>
+    <edge source="decorator.Espresso" target="decorator.Coffee">
+      <point x="0.0" y="-29.0" />
+      <point x="0.0" y="29.0" />
+    </edge>
+    <edge source="decorator.Milk" target="decorator.Drink">
+      <point x="38.66666666666663" y="-29.0" />
+      <point x="857.6666666666666" y="325.0" />
+      <point x="822.2765567765566" y="325.0" />
+      <point x="822.2765567765566" y="125.0" />
+      <point x="687.8571428571429" y="125.0" />
+      <point x="57.85714285714289" y="52.5" />
+    </edge>
+    <edge source="decorator.Sugar" target="decorator.Drink">
+      <point x="-41.666666666666686" y="-29.0" />
+      <point x="467.83333333333326" y="155.0" />
+      <point x="591.4285714285714" y="155.0" />
+      <point x="-38.571428571428555" y="52.5" />
+    </edge>
+    <edge source="decorator.Decorator" target="decorator.Drink">
+      <point x="-50.0" y="-65.0" />
+      <point x="607.393315018315" y="155.0" />
+      <point x="610.7142857142858" y="155.0" />
+      <point x="-19.28571428571422" y="52.5" />
+    </edge>
+    <edge source="decorator.Client" target="decorator.Milk">
+      <point x="38.75" y="-29.0" />
+      <point x="571.9198717948717" y="463.0" />
+      <point x="790.0" y="463.0" />
+      <point x="-29.0" y="29.0" />
+    </edge>
+    <edge source="decorator.Chocolate" target="decorator.Drink">
+      <point x="49.66666666666663" y="-29.0" />
+      <point x="716.1666666666666" y="355.0" />
+      <point x="742.893315018315" y="355.0" />
+      <point x="742.893315018315" y="135.0" />
+      <point x="668.5714285714286" y="135.0" />
+      <point x="38.571428571428555" y="52.5" />
+    </edge>
+    <edge source="decorator.LongBlack" target="decorator.Coffee">
+      <point x="0.0" y="-29.0" />
+      <point x="362.5" y="355.0" />
+      <point x="255.22664835164835" y="355.0" />
+      <point x="36.66666666666666" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="396.5" y="291.0" />
+  <SelectedNodes>
+    <node>decorator.ShortBlack</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
