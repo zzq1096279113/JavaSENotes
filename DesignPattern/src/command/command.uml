@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>command</OriginalElement>
+  <nodes>
+    <node x="264.0723443223443" y="624.0">command.Client</node>
+    <node x="128.0723443223443" y="141.0">command.LightReceiver</node>
+    <node x="223.0" y="389.0">command.LightOffCommand</node>
+    <node x="446.0" y="343.0">command.RemoteController</node>
+    <node x="431.5" y="176.5">command.NoCommand</node>
+    <node x="495.35714285714283" y="0.0">command.Command</node>
+    <node x="0.0" y="389.0">command.LightOnCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="command.Client" target="command.RemoteController">
+      <point x="64.58333333333331" y="-29.0" />
+      <point x="406.15567765567755" y="604.0" />
+      <point x="678.5" y="604.0" />
+      <point x="77.5" y="110.5" />
+    </edge>
+    <edge source="command.NoCommand" target="command.Command">
+      <point x="0.0" y="-40.5" />
+      <point x="496.0" y="121.0" />
+      <point x="541.4285714285713" y="121.0" />
+      <point x="-18.428571428571445" y="40.5" />
+    </edge>
+    <edge source="command.Client" target="command.LightOffCommand">
+      <point x="12.916666666666686" y="-29.0" />
+      <point x="354.4890109890109" y="604.0" />
+      <point x="375.25" y="604.0" />
+      <point x="50.75" y="64.5" />
+    </edge>
+    <edge source="command.LightOnCommand" target="command.Command">
+      <point x="-67.66666666666669" y="-64.5" />
+      <point x="33.833333333333314" y="323.0" />
+      <point x="84.66666666666663" y="323.0" />
+      <point x="84.66666666666663" y="101.0" />
+      <point x="504.57142857142856" y="101.0" />
+      <point x="-55.28571428571428" y="40.5" />
+    </edge>
+    <edge source="command.LightOffCommand" target="command.Command">
+      <point x="67.66666666666669" y="-64.5" />
+      <point x="392.1666666666667" y="323.0" />
+      <point x="359.90109890109886" y="323.0" />
+      <point x="359.90109890109886" y="111.0" />
+      <point x="523.0" y="111.0" />
+      <point x="-36.85714285714289" y="40.5" />
+    </edge>
+    <edge source="command.LightOnCommand" target="command.LightReceiver">
+      <point x="67.66666666666669" y="-64.5" />
+      <point x="169.16666666666669" y="323.0" />
+      <point x="204.5723443223443" y="323.0" />
+      <point x="-25.5" y="76.0" />
+    </edge>
+    <edge source="command.Client" target="command.LightOnCommand">
+      <point x="-38.75" y="-29.0" />
+      <point x="302.8223443223443" y="594.0" />
+      <point x="152.25" y="594.0" />
+      <point x="50.75" y="64.5" />
+    </edge>
+    <edge source="command.LightOffCommand" target="command.LightReceiver">
+      <point x="0.0" y="-64.5" />
+      <point x="324.5" y="323.0" />
+      <point x="306.5723443223443" y="323.0" />
+      <point x="76.5" y="76.0" />
+    </edge>
+    <edge source="command.RemoteController" target="command.Command">
+      <point x="-62.0" y="-110.5" />
+      <point x="539.0" y="323.0" />
+      <point x="571.0" y="323.0" />
+      <point x="571.0" y="121.0" />
+      <point x="559.8571428571429" y="121.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="command.RemoteController" target="command.NoCommand">
+      <point x="-124.0" y="-110.5" />
+      <point x="477.0" y="323.0" />
+      <point x="496.0" y="323.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="263.0" y="242.0" />
+  <SelectedNodes>
+    <node>command.Client</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
