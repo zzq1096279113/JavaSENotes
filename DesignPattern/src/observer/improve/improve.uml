@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>observer.improve</OriginalElement>
+  <nodes>
+    <node x="259.2760416666667" y="557.0">observer.improve.Client</node>
+    <node x="341.1197916666667" y="309.0">observer.improve.CurrentConditions</node>
+    <node x="157.86979166666669" y="0.0">observer.improve.Observer</node>
+    <node x="83.11979166666669" y="262.0">observer.improve.WeatherData</node>
+    <node x="0.0" y="108.0">observer.improve.Subject</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="observer.improve.WeatherData" target="observer.improve.Subject">
+      <point x="-79.33333333333331" y="-122.5" />
+      <point x="122.78645833333337" y="237.0" />
+      <point x="119.0" y="237.0" />
+      <point x="0.0" y="52.0" />
+    </edge>
+    <edge source="observer.improve.CurrentConditions" target="observer.improve.Observer">
+      <point x="0.0" y="-75.5" />
+      <point x="450.1197916666667" y="83.0" />
+      <point x="348.6197916666667" y="83.0" />
+      <point x="81.75" y="29.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8818897637795275" x="280.0" y="307.5" />
+  <SelectedNodes>
+    <node>observer.improve.Client</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
