@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>iterator</OriginalElement>
+  <nodes>
+    <node x="738.0234848484847" y="408.5">iterator.MechanicalCollege</node>
+    <node x="336.0" y="208.5">iterator.College</node>
+    <node x="293.7603535353534" y="623.0">iterator.Client</node>
+    <node x="155.51570707070692" y="397.0">iterator.InformationCollege</node>
+    <node x="608.0" y="185.0">iterator.MechanicalCollegeIterator</node>
+    <node x="592.6053535353535" y="0.0">iterator.Department</node>
+    <node x="0.0" y="185.0">iterator.InformationCollegeIterator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="iterator.InformationCollege" target="iterator.College">
+      <point x="100.80000000000001" y="-88.0" />
+      <point x="382.31570707070694" y="377.0" />
+      <point x="399.0" y="377.0" />
+      <point x="-63.0" y="52.5" />
+    </edge>
+    <edge source="iterator.MechanicalCollege" target="iterator.College">
+      <point x="-100.80000000000007" y="-76.5" />
+      <point x="763.2234848484846" y="377.0" />
+      <point x="525.0" y="377.0" />
+      <point x="63.0" y="52.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7988587731811697" x="495.5" y="340.5" />
+  <SelectedNodes>
+    <node>iterator.InformationCollege</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
