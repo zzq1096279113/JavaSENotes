@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // 对象的定义：
+        // var 变量名 = new Object();  // 对象实例（空对象）
+        // 变量名.属性名 = 值;     // 定义一个属性
+        // 变量名.函数名 = function(){}   // 定义一个函数
+        var obj = new Object();
+        obj.name = "zzq";
+        obj.age = 21;
+        obj.show = function (){
+            alert("姓名：" + this.name + "， 年龄：" + this.age)
+        };
+        obj.show();
+
+        var person = {
+            name:"zzp",
+            age:22,
+            show:function (){
+                alert("姓名：" + this.name + "， 年龄：" + this.age)
+            }
+        };
+        person.show()
+    </script>
+</head>
+<body>
+
+</body>
+</html>

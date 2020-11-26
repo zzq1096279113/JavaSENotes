@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // function fun() {
+        //     // alert(arguments.length); //将argumets作为数组使用
+        //     for (var i = 0; i < arguments.length; i++) {
+        //         alert(arguments[i]);
+        //     }
+        // }
+        // fun(123, "abc");
+        function sum(num1, num2) {
+            var result = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                if (typeof arguments[i] == "number")
+                    result += arguments[i];
+            }
+            return result;
+        }
+
+        alert(sum(1, 2, 3, 4, 5, 6, "abc"));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
