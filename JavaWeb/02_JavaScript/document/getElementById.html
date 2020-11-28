@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onclickFun() {
+            var username = document.getElementById("username");  //通过id得到对象
+            var usernameSpan = document.getElementById("usernameSpan");
+            var usernameText = username.value;       //通过对象得到输入的值
+            var patt = /^\w{5,12}$/;        //设置正则表达式
+            if(patt.test(usernameText)){    //test用于测试字符串是否匹配规则
+                usernameSpan.innerHTML = "用户名可用";
+            }else{
+                usernameSpan.innerHTML = "用户名不可用";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    用户名：<input type="text" id="username"/>
+    <span id="usernameSpan" style="color: red"></span><br/>
+    <button onclick="onclickFun()">校验</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        // var patt = /e/; //表示要求字符串中是否包含字母e
+        // var patt = /[abc]/; //表示字符串中是否包含字母“a”或“b”或“c”
+        // var patt = /[a-z]/; //表示字符串中是否包含“a”到“z”之间的任一字母
+        // var patt = /\w/; //字母、数字、下划线
+        // var patt = /^q/; //必须以q开头
+        // var patt = /p$/; //必须以p结尾
+        var patt = /^\w{5,12}$/; //必须以p结尾
+        var str = "[";
+        if (patt.test(str))
+            alert("匹配成功");
+        else
+            alert("匹配失败");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

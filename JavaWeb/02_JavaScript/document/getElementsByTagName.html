@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function checkAll() {
+            var inputs = document.getElementsByTagName("input");    //标签名为input的对象集合
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].checked = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    兴趣爱好：
+    <input type="checkbox" value="python">Python
+    <input type="checkbox" value="java">Java
+    <input type="checkbox" value="c">C语言
+    <br/>
+    <button onclick="checkAll()">全选</button>
+</body>
+</html>
