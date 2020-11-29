@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onchangeFun() {
+            alert("国籍改变");
+        }
+
+        window.onload = function () {
+            var elementById = document.getElementById("003");
+            elementById.onchange = function () {
+                alert("性别改变");
+            }
+        }
+    </script>
+</head>
+<body>
+    选择国籍:
+    <select onchange="onchangeFun()">
+        <option>中国</option>
+        <option>美国</option>
+        <option>日本</option>
+        <option>俄罗斯</option>
+    </select>
+    选择性别:
+    <select id="003">
+        <option>男</option>
+        <option>女</option>
+    </select>
+</body>
+</html>
