@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<books>
+    <book sn="SN00001">
+        <name>时间简史</name>   <!-- 书名 -->
+        <author>史蒂芬霍金</author>  <!-- 作者 -->
+        <price>75.00</price>    <!-- 价格 -->
+    </book>
+
+    <book sn="SN00002">
+        <name>白夜行</name>
+        <author>东野圭吾</author>
+        <price>50.00</price>
+    </book>
+</books>
