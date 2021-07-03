@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzq.mapper.TeacherMapper">
+
+    <select id="getAllTeacher" resultType="teacher">
+        select *
+        from teacher;
+    </select>
+
+    <resultMap id="TeacherAndStudent" type="Teacher">
+        <id property="id" column="teacher_id"/>
+        <result property="name" column="teacher_name"/>
+        <collection property="students" ofType="Student">
+            <result property="id" column="student_id"/>
+            <result property="name" column="student_name"/>
+        </collection>
+    </resultMap>
+
+    <select id="getTeacherAndStudent" resultMap="TeacherAndStudent">
+        SELECT t.`id` as teacher_id, t.`name` as teacher_name, s.`id` as student_id, s.`name` as student_name
+        FROM teacher as t
+        JOIN student as s
+        on t.`id` = s.`tid`;
+    </select>
+</mapper>
