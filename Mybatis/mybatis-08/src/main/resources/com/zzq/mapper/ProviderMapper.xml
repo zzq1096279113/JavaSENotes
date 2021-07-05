@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzq.mapper.ProviderMapper">
+    <insert id="add" parameterType="Provider">
+        INSERT INTO smbms_provider (`proCode`, `proName`, `proDesc`, `proContact`, `proPhone`, `proAddress`,
+                                    `proFax`, `createdBy`, `creationDate`)
+        VALUES (#{proCode}, #{proName}, #{proDesc}, #{proContact}, #{proPhone}, #{proAddress}, #{proFax},
+                #{createdBy}, #{creationDate})
+    </insert>
+
+    <select id="getProviderList" resultType="Provider">
+        SELECT * FROM smbms_provider
+        <where>
+            <if test="proName != null">
+                `proName` = #{proName}
+            </if>
+            <if test="proCode != null">
+                AND `proCode` = #{proCode}
+            </if>
+        </where>
+        ORDER BY `id`
+        LIMIT #{from},#{pageSize}
+    </select>
+
+    <select id="getProList" resultType="Provider">
+        SELECT *
+        FROM smbms_provider
+    </select>
+
+    <select id="getProviderCount" resultType="int">
+        SELECT COUNT(*)
+        FROM smbms_provider
+        <where>
+            <if test="proName != null">
+                `proName` = #{proName}
+            </if>
+            <if test="proCode != null">
+                AND `proCode` = #{proCode}
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteProviderById">
+        DELETE
+        FROM smbms_provider
+        WHERE `id` = #{id}
+    </delete>
+
+    <select id="getProviderById" resultType="Provider">
+        SELECT *
+        FROM smbms_provider
+        WHERE `id` = #{id}
+    </select>
+
+    <update id="modify" parameterType="Provider">
+        UPDATE smbms_provider
+        <set>
+            <if test="proName != null">
+                `proName` = #{proName},
+            </if>
+            <if test="proDesc != null">
+                `proDesc` = #{proDesc},
+            </if>
+            <if test="proContact != null">
+                `proContact` = #{proContact},
+            </if>
+            <if test="proPhone != null">
+                `proPhone` = #{proPhone},
+            </if>
+            <if test="proAddress != null">
+                `proAddress` = #{proAddress},
+            </if>
+            <if test="proFax != null">
+                `proFax` = #{proFax},
+            </if>
+            <if test="modifyBy != null">
+                `modifyBy` = #{modifyBy}
+            </if>
+            <if test="modifyDate != null">
+                `modifyDate` = #{modifyDate}
+            </if>
+        </set>
+        WHERE `id` = #{id}
+    </update>
+</mapper>
