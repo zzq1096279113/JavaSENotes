@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    <bean id="hello" class="com.zzq.pojo.Hello">-->
+    <!--        <property name="name" value="Hello Hello"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="world" class="com.zzq.pojo.Hello">-->
+    <!--        <constructor-arg index="0" value="Hello World"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="spring" class="com.zzq.pojo.Hello">-->
+    <!--        <constructor-arg type="java.lang.String" value="Hello Spring"/>-->
+    <!--    </bean>-->
+
+    <bean id="mybatis" class="com.zzq.pojo.Hello" name="hm">
+        <constructor-arg name="name" value="Hello Mybatis"/>
+    </bean>
+
+    <alias name="mybatis" alias="helloMybatis"/>
+
+</beans>
